@@ -12,8 +12,12 @@ This system basically allows cheaters to change the speed, teleport or even fly
 (unless we do some sort of checking, which is very difficult),
 because the server gets your position and just sends it to everyone.    
 <p style="text-align: center;">
-<img src="img/client_authorative.png" width="60%">
+<img src="/img/client_authorative.png" width="60%">
 </p>
+
+
+![bruh](/img/client_authorative.png)
+
 
 ## How do we fix that?
 
@@ -24,7 +28,7 @@ movement scripts to change their position. After that, the server
 send the positions to the clients. This is called server-authorative movement.
 So it looks something like this:
 <p style="text-align: center;">
-<img src="img/server_authorative.png" width="60%">
+<img src="/img/server_authorative.png" width="60%">
 </p>
 
 ## Problem fixed?
@@ -34,7 +38,7 @@ But we want to go further. We want to eliminate the delay completely.
 But first, let's make sure that we understand where the delay is coming from:
 
 <p style="text-align: center;">
-<img src="img/movement_delay.png" width="60%">
+<img src="/img/movement_delay.png" width="60%">
 </p>
 
 So the delay consists of these parts:
@@ -67,7 +71,7 @@ Slight problem:
 Let me explain this by adding timestamps to the previous graph:
 
 <p style="text-align: center;">
-<img src="img/naive_approach.png" width="60%">
+<img src="/img/naive_approach.png" width="60%">
 </p>
 
 As you can see, the player received a position with a 
@@ -75,7 +79,7 @@ timestamp of `1`, although the client's current time is `1.5`.
 And this graph shows exactly why that's a problem:
 
 <p style="text-align: center;">
-<img src="img/position_is_past.png" width="60%">
+<img src="/img/position_is_past.png" width="60%">
 </p>
 
 1. Client sends the input packet `forward` and moves forward, so that `pos_y = 1`.
