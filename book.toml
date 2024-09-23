@@ -4,5 +4,4 @@ language = "en"
 multilingual = false
 src = "src"
 title = "Game documentation"
-[output.html]
-copy-resources = ["src/img"]
+git-repository-url = "https://github.com/0crispy/game_docs"
