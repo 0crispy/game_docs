@@ -1,2 +1,6 @@
 # Introduction
-Welcome to the doc page of my game. Here you can see how my systems work.
+Welcome to this wonderful website. Here you will find:
+- [Guide to making multiplayer games.](networking_guide.md)
+- [Rules and conventions for my game.](rules_pirate.md)
+
+I hope you find something useful.
